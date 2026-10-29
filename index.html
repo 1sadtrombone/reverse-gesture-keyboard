@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reverse Gesture Keyboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="src/main.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Reverse Gesture Keyboard</h1>
+      <p>Type normally. Each word becomes the swipe a finger would trace to type it. Hover a word to watch it replay at finger speed.</p>
+    </header>
+
+    <gesture-textbox id="box" placeholder="Start typing…"></gesture-textbox>
+
+    <form class="controls" id="controls">
+      <label>Sloppiness <input type="range" name="sloppiness" min="0" max="1" step="0.01" value="0.4"></label>
+      <label>Fluency <input type="range" name="fluency" min="0" max="1" step="0.01" value="0.5"></label>
+      <label>Size <input type="range" name="size" min="14" max="64" step="1" value="24"></label>
+      <label class="check"><input type="checkbox" name="letters"> Key letters</label>
+      <button type="button" id="reroll">New hand</button>
+    </form>
+  </main>
+</body>
+</html>
